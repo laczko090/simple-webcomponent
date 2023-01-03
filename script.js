@@ -12,6 +12,12 @@ const template = document.createElement('template');
 template.innerHTML = `
 <style>h2 { color: red; }</style>
 <h2></h2>
+<div>
+  <slot/>
+</div>
+<div>
+  Price: <slot name="price" />
+</div>
 <button>Buy it</button>
 `;
 

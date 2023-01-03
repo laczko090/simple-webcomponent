@@ -10,7 +10,10 @@
   <body>
     <main>
       <h2>Test page</h2>
-      <my-product name="Headphones"></my-product>
+      <my-product name="Headphones">
+        <h2>Cool description</h2>
+        <span slot="price">19usd</span>
+      </my-product>
       <button onclick="changeProduct()">Change product</button>
       <button onclick="changeProductBack()">Change product back</button>
     </main>
